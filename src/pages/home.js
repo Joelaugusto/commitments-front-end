@@ -1,12 +1,10 @@
 import React from "react";  
 import CommitmentContainer from "../components/CommitmentContainer/CommitmentsContainer";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import './styles.css'
 
 const HomePage = () => {
 
-
-  const navigate = useNavigate()
 
     return (
       <div>

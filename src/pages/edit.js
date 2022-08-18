@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import api from "../services/api";
-import { useNavigate, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import "./styles.css";
 
 const Edit = () => {
@@ -10,7 +10,7 @@ const Edit = () => {
 
   console.log(id)
 
-  const navigate = useNavigate();
+  const navigate = useHistory();
 
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
@@ -32,7 +32,7 @@ const Edit = () => {
        .put(`commitments/${id}/`, { name, title, deadline: `${date} ${time}` })
        .catch((err) => console.log(err));
 
-     navigate("/");
+      navigate.push('/')
    };
 
 

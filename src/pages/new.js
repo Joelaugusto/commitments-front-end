@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import api from '../services/api'
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import './styles.css'
 
 const Create = () => {
 
-  const navigate = useNavigate();
+  const navigate = useHistory();
 
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
@@ -17,7 +17,7 @@ const Create = () => {
 
     await api.post('commitments', { name, title, deadline: `${date} ${time}` }).catch((err) => console.log(err));
 
-    navigate("/");
+    navigate.push('/')
 
   }
 
