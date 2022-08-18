@@ -98,7 +98,7 @@ const Edit = () => {
             value={time}
           />
 
-          <input type={"submit"} value="Registrar" />
+          <input type={"submit"} value="Atualizar" />
         </form>
       </div>
     </div>
