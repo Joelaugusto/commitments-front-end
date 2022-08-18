@@ -1,0 +1,36 @@
+
+
+input {
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5vw;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.create-btn {
+    border: solid 1px gray;
+    padding: 8px;
+    background: #8fc7a9;
+    border-radius: 5px;
+}
